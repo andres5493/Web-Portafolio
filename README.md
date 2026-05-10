@@ -10,13 +10,21 @@ Sitio web personal donde comparto mi camino hacia Data Analyst, mis proyectos de
 
 ## Estructura
 mi-portfolio/
+
 ├── index.html        # Home
+
 ├── about.html        # Sobre mí
+
 ├── projects.html     # Proyectos
+
 ├── blog.html         # Blog
+
 ├── contact.html      # Contacto
+
 ├── css/              # Estilos
+
 ├── js/               # Scripts
+
 └── assets/img/       # Imágenes
 
 ## Desarrollo local
