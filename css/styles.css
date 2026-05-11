@@ -11,6 +11,14 @@
     --color-accent: #000000;
     --transition-theme: 0.3s ease;
 }
+/* ===== Paleta modo oscuro ===== */
+.dark-mode {
+    --color-bg: #1a1a1a;
+    --color-text: #e8e8e8;
+    --color-text-muted: #999999;
+    --color-border: #333333;
+    --color-accent: #ffffff;
+}
 
 /* ===== Tipografia base ===== */
 body {
