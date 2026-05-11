@@ -2,29 +2,48 @@
    styles.css — overrides minimalistas
    ============================================ */
 
-/* Tipografía base — Bootstrap usa system-ui que se siente generico.
-   Una serif elegante le da personalidad, en linea con la pagina de Jesus. */
-body {
-    font-family: 'Georgia', 'Times New Roman', serif;
-    color: #222;
+/* ===== Paleta de colores (modo claro = default) ===== */
+:root {
+    --color-bg: #ffffff;
+    --color-text: #222222;
+    --color-text-muted: #555555;
+    --color-border: #e5e5e5;
+    --color-accent: #000000;
+    --transition-theme: 0.3s ease;
 }
 
-/* El nombre del navbar un poco mas grande y con tracking */
+/* ===== Tipografia base ===== */
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    transition: background-color var(--transition-theme), 
+                color var(--transition-theme);
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background-color: var(--color-bg) !important;
+    border-bottom: 1px solid var(--color-border) !important;
+    transition: background-color var(--transition-theme), 
+                border-color var(--transition-theme);
+}
+
 .navbar-brand {
     font-size: 1.25rem;
     letter-spacing: 0.02em;
+    color: var(--color-text) !important;
 }
 
-/* Los links del navbar: color sutil y subrayado animado al hover */
 .navbar-nav .nav-link {
-    color: #555;
+    color: var(--color-text-muted) !important;
     font-size: 0.95rem;
     position: relative;
     transition: color 0.2s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #000;
+    color: var(--color-text) !important;
 }
 
 .navbar-nav .nav-link::after {
@@ -34,7 +53,7 @@ body {
     right: 0.5rem;
     bottom: 0.25rem;
     height: 1px;
-    background-color: #000;
+    background-color: var(--color-accent);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.2s ease;
@@ -44,8 +63,22 @@ body {
     transform: scaleX(1);
 }
 
-/* Hero: que el nombre tenga mas presencia visual */
+/* ===== Hero ===== */
 .hero h1 {
-    letter-spacing: -0.03em; /* letras un poco mas juntas, mas elegante */
+    letter-spacing: -0.03em;
     line-height: 1;
+}
+
+.hero .text-muted {
+    color: var(--color-text-muted) !important;
+}
+
+/* Iconos sociales */
+.hero a.text-dark {
+    color: var(--color-text) !important;
+    transition: color 0.2s ease;
+}
+
+.hero a.text-dark:hover {
+    color: var(--color-text-muted) !important;
 }
