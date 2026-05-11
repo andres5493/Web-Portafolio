@@ -74,13 +74,56 @@
     <main class="container pb-5">
         <div class="row g-4">
 
-            <!-- Card 1: Origen -->
+<!-- Card 1: Origen -->
             <div class="col-md-6 col-lg-4">
-                <article class="project-card h-100 p-4 border rounded">
-                    <p class="text-muted">Card de Origen pendiente</p>
+                <article class="project-card h-100 d-flex flex-column border rounded overflow-hidden">
+
+                    <!-- Imagen / preview con gradiente placeholder -->
+                    <div class="project-card-image d-flex align-items-center justify-content-center">
+                        <i class="bi bi-cup-hot-fill text-white" style="font-size: 4rem;"></i>
+                    </div>
+
+                    <!-- Cuerpo de la card -->
+                    <div class="p-4 d-flex flex-column flex-grow-1">
+
+                        <!-- Badge de estado -->
+                        <span class="badge bg-warning-subtle text-warning-emphasis align-self-start mb-3">
+                            En desarrollo
+                        </span>
+
+                        <!-- Titulo -->
+                        <h2 class="h5 fw-bold mb-2">Origen — Análisis de Ventas</h2>
+
+                        <!-- Tags -->
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <span class="tag">SQL</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Excel</span>
+                        </div>
+
+                        <!-- Descripcion -->
+                        <p class="text-muted mb-4 flex-grow-1">
+                            Análisis de un café de especialidad con datos sintéticos en UYU. 
+                            Identificación de productos estrella, productos en declive y 
+                            oportunidades de menú a través de SQL y visualización en Python.
+                        </p>
+
+                        <!-- Botones -->
+                        <div class="d-flex gap-2">
+                            <a href="https://github.com/andres5493/cafeteria-analysis" 
+                               class="btn btn-sm btn-dark" 
+                               target="_blank" rel="noopener">
+                                <i class="bi bi-github me-1"></i> Código
+                            </a>
+                            <button class="btn btn-sm btn-outline-secondary" disabled>
+                                Demo pendiente
+                            </button>
+                        </div>
+
+                    </div>
                 </article>
             </div>
-
+            
             <!-- Card 2: Bot de check-in -->
             <div class="col-md-6 col-lg-4">
                 <article class="project-card h-100 p-4 border rounded">
