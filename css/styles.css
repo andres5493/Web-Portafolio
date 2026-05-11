@@ -113,10 +113,20 @@ a.text-dark:hover {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* Imagen placeholder con gradiente */
+/* Imagen placeholder con gradiente (default: café) */
 .project-card-image {
     height: 160px;
     background: linear-gradient(135deg, #6f4e37 0%, #b88968 100%);
+}
+
+/* Variante: bot de check-in (azul/morado) */
+.project-card-image--bot {
+    background: linear-gradient(135deg, #3a416f 0%, #6a7baf 100%);
+}
+
+/* Variante: inmobiliario (verde sobrio) */
+.project-card-image--real-estate {
+    background: linear-gradient(135deg, #2d5f3f 0%, #5a9970 100%);
 }
 
 /* Tags estilo "pildora" */
