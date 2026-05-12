@@ -41,3 +41,12 @@ function actualizarIconoBoton(esOscuro) {
 
 // 5) Llamar a la funcion al cargar para que el icono coincida con el modo inicial
 actualizarIconoBoton(document.documentElement.classList.contains('dark-mode'));
+
+// ============================================
+// Footer: actualizar el año automaticamente
+// ============================================
+
+const anioActual = document.querySelector('#anio-actual');
+if (anioActual) {
+    anioActual.textContent = new Date().getFullYear();
+}

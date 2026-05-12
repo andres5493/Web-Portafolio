@@ -140,3 +140,21 @@ a.text-dark:hover {
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
+
+/* ===== Footer ===== */
+
+.site-footer {
+    background-color: var(--color-bg);
+    border-top-color: var(--color-border) !important;
+    transition: background-color var(--transition-theme), 
+                border-color var(--transition-theme);
+}
+
+.site-footer a.text-dark {
+    color: var(--color-text) !important;
+    transition: color 0.2s ease;
+}
+
+.site-footer a.text-dark:hover {
+    color: var(--color-text-muted) !important;
+}
