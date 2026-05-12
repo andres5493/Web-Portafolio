@@ -158,3 +158,37 @@ a.text-dark:hover {
 .site-footer a.text-dark:hover {
     color: var(--color-text-muted) !important;
 }
+
+/* ===== Contact: bloque del email destacado ===== */
+.contact-email-block {
+    background-color: var(--color-border);
+    transition: background-color var(--transition-theme);
+}
+
+.contact-email {
+    color: var(--color-text) !important;
+    font-size: 1.5rem;
+    text-decoration: none;
+    word-break: break-all;
+    transition: color 0.2s ease;
+}
+
+.contact-email:hover {
+    color: var(--color-text-muted) !important;
+}
+
+/* ===== Contact: tarjetas de canales ===== */
+.contact-channel {
+    color: var(--color-text) !important;
+    text-decoration: none;
+    transition: transform 0.2s ease, 
+                box-shadow 0.2s ease, 
+                border-color 0.2s ease;
+    border-color: var(--color-border) !important;
+}
+
+.contact-channel:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    color: var(--color-text) !important;
+}

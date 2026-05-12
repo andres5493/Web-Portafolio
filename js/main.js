@@ -50,3 +50,32 @@ const anioActual = document.querySelector('#anio-actual');
 if (anioActual) {
     anioActual.textContent = new Date().getFullYear();
 }
+
+// ============================================
+// Contact: copiar email al portapapeles
+// ============================================
+
+const botonCopiarEmail = document.querySelector('#copiar-email');
+
+if (botonCopiarEmail) {
+    botonCopiarEmail.addEventListener('click', async () => {
+        const email = 'andresdr.pro@gmail.com';
+        
+        try {
+            await navigator.clipboard.writeText(email);
+            
+            // Feedback visual: cambiar el texto del boton
+            const textoSpan = botonCopiarEmail.querySelector('span');
+            const textoOriginal = textoSpan.textContent;
+            textoSpan.textContent = '¡Copiado!';
+            
+            // Volver al texto original despues de 2 segundos
+            setTimeout(() => {
+                textoSpan.textContent = textoOriginal;
+            }, 2000);
+            
+        } catch (error) {
+            console.error('No se pudo copiar el email:', error);
+        }
+    });
+}
